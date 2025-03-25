@@ -13,7 +13,7 @@ const app = express();
 config({ path: "./config.env" });
 dotenv.config();
 
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174'];
+const allowedOrigins = ['http://localhost:5175', 'http://localhost:5174'];
 app.use(cors( {origin:allowedOrigins,credentials: true,}))
 
 app.use(cookieParser());
